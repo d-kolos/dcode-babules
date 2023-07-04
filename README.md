@@ -1,5 +1,9 @@
 # README
 
+## Перед запуском скопіювати
+### development-sample.sqlite3 → development.sqlite3
+### database-sample.yml → database.yml
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
