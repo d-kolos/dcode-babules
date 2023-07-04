@@ -1,0 +1,78 @@
+<nav class="navbar navbar-expand-lg bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand mb-0 h1" href="/">Babules</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse navbar" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+        <li class="nav-item">
+          <%= link_to 'Home', '/', class: ['nav-link', ('active' if current_page?('/'))] %>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle<%=
+            ' active' if current_page?('/categories') || current_page?('/categories/new')
+          %>" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categories</a>
+          <ul class="dropdown-menu">
+            <li><%= link_to 'All categories', '/categories',
+                            class: ['dropdown-item', ('active' if current_page?('/categories'))] %></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><%= link_to 'New category', '/categories/new',
+                            class: ['dropdown-item', ('active' if current_page?('/categories/new'))] %></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle<%=
+            ' active' if current_page?('/operations') || current_page?('/operations/new')
+          %>" role="button" data-bs-toggle="dropdown" aria-expanded="false">Operations</a>
+          <ul class="dropdown-menu">
+            <li><%= link_to 'All operations', '/operations',
+                            class: ['dropdown-item', ('active' if current_page?('/operations'))] %></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><%= link_to 'New operation', '/operations/new',
+                            class: ['dropdown-item', ('active' if current_page?('/operations/new'))] %></li>
+          </ul>
+        </li>
+
+        <%# REPORTS %>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle<%=
+            ' active' if current_page?('/reports') || current_page?('/reports/report-by-category') ||
+              current_page?('/reports/report-by-dates')
+          %>" role="button" data-bs-toggle="dropdown" aria-expanded="false">Reports</a>
+          <ul class="dropdown-menu">
+<!--            <li><%#= link_to 'All reports', '/reports',-->
+<!--                            class: ['dropdown-item', ('active' if current_page?('/reports'))] %></li>-->
+<!--            <li><hr class="dropdown-divider"></li>-->
+            <li><%= link_to 'Report by category', '/reports/report-by-category',
+                            class: ['dropdown-item', ('active' if current_page?('/reports/report-by-category'))] %></li>
+            <li><%= link_to 'Report by dates', '/reports/report-by-dates',
+                            class: ['dropdown-item', ('active' if current_page?('/reports/report-by-dates'))] %></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle<%= ' active' if current_page?('/about') || current_page?('/framework')
+          %>" role="button" data-bs-toggle="dropdown" aria-expanded="false">About</a>
+          <ul class="dropdown-menu">
+            <li><%= link_to 'About Application', '/about',
+                            class: ['dropdown-item', ('active' if current_page?('/about'))] %></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><%= link_to 'Ruby and Rails versions', '/framework',
+                            class: ['dropdown-item', ('active' if current_page?('/framework'))] %></li>
+          </ul>
+        </li>
+
+      </ul>
+
+      <% if Rails.env != 'production' %>
+      <span class="navbar-text">env: <%= Rails.env %></span>
+      <% end %>
+
+    </div>
+  </div>
+</nav>

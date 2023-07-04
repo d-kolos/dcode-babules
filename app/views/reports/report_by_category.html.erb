@@ -1,0 +1,65 @@
+<div class="row mb-3">
+  <div class="col-sm-1"></div>
+  <div class="col-sm-5">
+    <h3>Select period</h3>
+    <form class="mb-3 row" method="get" action="./report-by-category">
+      <label for="inputStartDate" class="col-lg-2 col-form-label">Start Date</label>
+      <div class="col-lg-5">
+        <input type="date" class="form-control mb-2" id="inputStartDate" name="date_1" value="<%=
+          @date_1.strftime('%Y-%m-%d') %>">
+      </div>
+      <div class="col-lg-5"></div>
+
+      <label for="inputEndDate" class="col-lg-2 col-form-label">End Date</label>
+      <div class="col-lg-5">
+        <input type="date" class="form-control" id="inputEndDate" name="date_2" value="<%=
+          @date_2.strftime('%Y-%m-%d') %>">
+      </div>
+      <div class="col-lg-5"></div>
+
+      <div class="col-sm-12 mt-10">
+        <input type="submit" class="btn btn-sm btn-primary mt-3" value="Show Report">
+      </div>
+    </form>
+
+    <div class="row">
+      <div class="col-sm-8">
+        <h5>Category amounts</h5>
+        <table class="table table-hover table-striped">
+          <% total = 0 %>
+          <% @data_grouped_hash.each do |item| %>
+            <tr>
+              <td><%= item[0] %></td>
+              <td><%= sprintf('%.2f', item[1]) %></td>
+            </tr>
+            <% total += item[1] %>
+          <% end %>
+          <tr>
+            <th colspan="2">Total: <%= sprintf('%.2f', total) %></th>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="col-sm-5">
+    <canvas id="categoryChart"></canvas>
+  </div>
+  <!--suppress JSUnresolvedReference -->
+  <script>
+      document.categoryChart = document.getElementById('categoryChart');
+      new Chart(document.categoryChart, {
+          type: 'pie',
+          data: {
+              // labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+              labels: <%= raw @labels %>,
+              datasets: [{
+                  label: 'Category amount',
+                  data: <%= @data %>,
+                  borderWidth: 1
+              }]
+          },
+      });
+  </script>
+</div>

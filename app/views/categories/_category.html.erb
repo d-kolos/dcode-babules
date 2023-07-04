@@ -1,0 +1,22 @@
+<% if action_name == 'index' %>
+
+  <tr id="<%= dom_id category %>">
+    <td><%= category.name %></td>
+    <td><%= category.description %></td>
+    <td><%= link_to "Show this category", category, class: 'btn btn-sm btn-outline-primary' %></td>
+  </tr>
+
+<% else %>
+
+  <div id="<%= dom_id category %>">
+    <table class="table table-borderless table-hover">
+      <tr>
+        <td><strong>Name:</strong> <%= category.name %></td>
+      </tr>
+      <tr>
+        <td><strong>Description:</strong> <%= category.description %></td>
+      </tr>
+    </table>
+  </div>
+
+<% end %>

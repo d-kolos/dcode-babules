@@ -1,0 +1,32 @@
+<p style="color: green"><%= notice %></p>
+
+<div id="operations">
+
+  <% if @operations.present? %>
+    <table class="table table-hover table-striped">
+      <thead>
+      <tr>
+        <th>Operation date</th>
+        <th>Amount</th>
+        <th>Description</th>
+        <th>Category</th>
+        <th>Action</th>
+      </tr>
+      </thead>
+      <tbody>
+
+  <% @operations.each do |operation| %>
+    <%= render operation %>
+  <% end %>
+
+    </tbody>
+    </table>
+
+    <%= paginate @operations %>
+
+  <% end %>
+
+</div>
+
+<%= #noinspection RubyResolve
+    link_to "New operation", new_operation_path, class: 'btn btn-sm btn-primary' %>

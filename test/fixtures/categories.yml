@@ -1,0 +1,41 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: Продукти харчування
+  description: Витрати на продукти
+
+two:
+  name: Харчування
+  description: Витрати на обіди, сніданки в закладах громадського харчування
+
+three:
+  name: Відпочинок
+  description: Витрати на гулянки, походи в гори, туризм
+
+four:
+  name: Проїзд
+  description: Витрати на оплату проїзду в громадському транспорті
+
+five:
+  name: Комуналка
+  description: Витрати на оплату комунальних послуг
+
+six:
+  name: Одяг
+  description: Витрати на купівлю одягу, взуття, аксесуарів
+
+seven:
+  name: Благоустрій
+  description: Витрати на меблі та речі в квартиру
+
+eight:
+  name: Ремонт
+  description: Витрати на ремонт квартири
+
+nine:
+  name: Автомобіль
+  description: Витрати на заправку та утриманння автомобіля
+
+ten:
+  name: Таксі
+  description: Витрати на оплату проїзду в таксі

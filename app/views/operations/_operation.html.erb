@@ -1,0 +1,30 @@
+<% if action_name == 'index' %>
+
+  <tr id="<%= dom_id operation %>">
+    <td><%= operation.odate.strftime('%Y-%m-%d') %></td>
+    <td><%= sprintf('%.2f', operation.amount) %></td>
+    <td><%= operation.description %></td>
+    <td><%= operation.category.name %></td>
+    <td><%= link_to 'Show this operation', operation, class: 'btn btn-sm btn-outline-primary' %></td>
+  </tr>
+
+<% else %>
+
+  <div id="<%= dom_id operation %>">
+    <table class="table table-borderless table-hover">
+      <tr>
+        <td><strong>Operation date:</strong> <%= operation.odate.strftime('%Y-%m-%d') %></td>
+      </tr>
+      <tr>
+        <td><strong>Amount:</strong> <%= sprintf('%.2f', operation.amount) %></td>
+      </tr>
+      <tr>
+        <td><strong>Description:</strong> <%= operation.description %></td>
+      </tr>
+      <tr>
+        <td><strong>Category:</strong> <%= operation.category.name %></td>
+      </tr>
+    </table>
+  </div>
+
+<% end %>

@@ -1,0 +1,558 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+#one:
+#  odate: 2023-06-30 23:47:34
+#  amount: 9.99
+#  description: MyString
+#  category: one
+
+one:
+  odate: 2023-01-01
+  amount: 20
+  description: Хліб
+  category: one
+o002:
+  odate: 2023-01-11
+  amount: 22
+  description: Хліб
+  category: one
+o003:
+  odate: 2023-01-21
+  amount: 14
+  description: Хліб
+  category: one
+o004:
+  odate: 2023-02-01
+  amount: 15
+  description: Хліб
+  category: one
+o005:
+  odate: 2023-02-11
+  amount: 15
+  description: Хліб
+  category: one
+o006:
+  odate: 2023-02-21
+  amount: 20
+  description: Хліб
+  category: one
+o007:
+  odate: 2023-03-01
+  amount: 24
+  description: Хліб
+  category: one
+o008:
+  odate: 2023-03-11
+  amount: 20
+  description: Хліб
+  category: one
+o009:
+  odate: 2023-03-21
+  amount: 15
+  description: Хліб
+  category: one
+o010:
+  odate: 2023-03-31
+  amount: 17
+  description: Хліб
+  category: one
+o011:
+  odate: 2023-04-11
+  amount: 12
+  description: Хліб
+  category: one
+o012:
+  odate: 2023-04-21
+  amount: 15
+  description: Хліб
+  category: one
+o013:
+  odate: 2023-05-01
+  amount: 12
+  description: Хліб
+  category: one
+o014:
+  odate: 2023-05-11
+  amount: 19
+  description: Хліб
+  category: one
+o015:
+  odate: 2023-05-21
+  amount: 20
+  description: Хліб
+  category: one
+o016:
+  odate: 2023-06-01
+  amount: 21
+  description: Хліб
+  category: one
+o017:
+  odate: 2023-06-11
+  amount: 25
+  description: Хліб
+  category: one
+o018:
+  odate: 2023-06-21
+  amount: 20
+  description: Хліб
+  category: one
+o019:
+  odate: 2023-06-25
+  amount: 11
+  description: Хліб
+  category: one
+o020:
+  odate: 2023-07-01
+  amount: 15
+  description: Хліб
+  category: one
+o021:
+  odate: 2023-01-02
+  amount: 70
+  description: Обід
+  category: two
+o022:
+  odate: 2023-01-12
+  amount: 80
+  description: Обід
+  category: two
+o023:
+  odate: 2023-01-22
+  amount: 90
+  description: Обід
+  category: two
+o024:
+  odate: 2023-02-02
+  amount: 95
+  description: Обід
+  category: two
+o025:
+  odate: 2023-02-22
+  amount: 75
+  description: Обід
+  category: two
+o026:
+  odate: 2023-03-02
+  amount: 60
+  description: Обід
+  category: two
+o027:
+  odate: 2023-03-22
+  amount: 90
+  description: Обід
+  category: two
+o028:
+  odate: 2023-04-02
+  amount: 60
+  description: Обід
+  category: two
+o029:
+  odate: 2023-04-22
+  amount: 75
+  description: Обід
+  category: two
+o030:
+  odate: 2023-07-02
+  amount: 95
+  description: Обід
+  category: two
+o031:
+  odate: 2023-01-03
+  amount: 120
+  description: Гулянка
+  category: three
+o032:
+  odate: 2023-01-23
+  amount: 130
+  description: Гулянка
+  category: three
+o033:
+  odate: 2023-02-03
+  amount: 140
+  description: Похід
+  category: three
+o034:
+  odate: 2023-02-23
+  amount: 150
+  description: Гулянка
+  category: three
+o035:
+  odate: 2023-03-03
+  amount: 160
+  description: Гулянка
+  category: three
+o036:
+  odate: 2023-03-23
+  amount: 170
+  description: Похід
+  category: three
+o037:
+  odate: 2023-04-03
+  amount: 180
+  description: Похід
+  category: three
+o038:
+  odate: 2023-04-23
+  amount: 190
+  description: Туризм
+  category: three
+o039:
+  odate: 2023-05-23
+  amount: 170
+  description: Туризм
+  category: three
+o040:
+  odate: 2023-07-03
+  amount: 180
+  description: Гулянка
+  category: three
+o041:
+  odate: 2023-01-04
+  amount: 10
+  description: Автобус
+  category: four
+o042:
+  odate: 2023-02-04
+  amount: 10
+  description: Автобус
+  category: four
+o043:
+  odate: 2023-03-04
+  amount: 10
+  description: Автобус
+  category: four
+o044:
+  odate: 2023-04-04
+  amount: 10
+  description: Автобус
+  category: four
+o045:
+  odate: 2023-05-04
+  amount: 10
+  description: Автобус
+  category: four
+o046:
+  odate: 2023-06-04
+  amount: 10
+  description: Автобус
+  category: four
+o047:
+  odate: 2023-06-14
+  amount: 10
+  description: Тролейбус
+  category: four
+o048:
+  odate: 2023-06-24
+  amount: 10
+  description: Тролейбус
+  category: four
+o049:
+  odate: 2023-07-01
+  amount: 10
+  description: Тролейбус
+  category: four
+o050:
+  odate: 2023-07-04
+  amount: 10
+  description: Автобус
+  category: four
+o051:
+  odate: 2023-01-05
+  amount: 200
+  description: Вода
+  category: five
+o052:
+  odate: 2023-01-15
+  amount: 300
+  description: Електрика
+  category: five
+o053:
+  odate: 2023-02-05
+  amount: 200
+  description: Вода
+  category: five
+o054:
+  odate: 2023-02-15
+  amount: 300
+  description: Електрика
+  category: five
+o055:
+  odate: 2023-03-05
+  amount: 200
+  description: Вода
+  category: five
+o056:
+  odate: 2023-03-15
+  amount: 300
+  description: Електрика
+  category: five
+o057:
+  odate: 2023-04-05
+  amount: 200
+  description: Вода
+  category: five
+o058:
+  odate: 2023-04-15
+  amount: 300
+  description: Електрика
+  category: five
+o059:
+  odate: 2023-07-01
+  amount: 200
+  description: Вода
+  category: five
+o060:
+  odate: 2023-07-01
+  amount: 300
+  description: Електрика
+  category: five
+o061:
+  odate: 2023-01-06
+  amount: 500
+  description: Сорочка
+  category: six
+o062:
+  odate: 2023-01-16
+  amount: 700
+  description: Чоботи
+  category: six
+o063:
+  odate: 2023-02-06
+  amount: 800
+  description: Туфлі
+  category: six
+o064:
+  odate: 2023-02-16
+  amount: 900
+  description: Сукня
+  category: six
+o065:
+  odate: 2023-03-06
+  amount: 500
+  description: Сумка
+  category: six
+o066:
+  odate: 2023-03-16
+  amount: 200
+  description: Тапки
+  category: six
+o067:
+  odate: 2023-04-06
+  amount: 550
+  description: Сорочка
+  category: six
+o068:
+  odate: 2023-05-06
+  amount: 750
+  description: Сукня
+  category: six
+o069:
+  odate: 2023-06-06
+  amount: 850
+  description: Сукня
+  category: six
+o070:
+  odate: 2023-07-03
+  amount: 550
+  description: Сорочка
+  category: six
+o071:
+  odate: 2023-01-07
+  amount: 150
+  description: Порошок
+  category: seven
+o072:
+  odate: 2023-01-17
+  amount: 170
+  description: Засіб
+  category: seven
+o073:
+  odate: 2023-02-07
+  amount: 120
+  description: Порошок
+  category: seven
+o074:
+  odate: 2023-02-17
+  amount: 1120
+  description: Стілець
+  category: seven
+o075:
+  odate: 2023-03-07
+  amount: 130
+  description: Порошок
+  category: seven
+o076:
+  odate: 2023-04-07
+  amount: 330
+  description: Килимок
+  category: seven
+o077:
+  odate: 2023-05-07
+  amount: 230
+  description: Ваза
+  category: seven
+o078:
+  odate: 2023-06-07
+  amount: 120
+  description: Порошок
+  category: seven
+o079:
+  odate: 2023-06-17
+  amount: 110
+  description: Засіб
+  category: seven
+o080:
+  odate: 2023-07-01
+  amount: 130
+  description: Порошок
+  category: seven
+o081:
+  odate: 2023-01-08
+  amount: 550
+  description: Матеріали
+  category: eight
+o082:
+  odate: 2023-02-08
+  amount: 250
+  description: Ремонт крана
+  category: eight
+o083:
+  odate: 2023-03-08
+  amount: 300
+  description: Квіти
+  category: eight
+o084:
+  odate: 2023-04-08
+  amount: 200
+  description: Ремонт замка
+  category: eight
+o085:
+  odate: 2023-05-08
+  amount: 100
+  description: Ремонт вимикача
+  category: eight
+o086:
+  odate: 2023-06-08
+  amount: 120
+  description: Деталі
+  category: eight
+o087:
+  odate: 2023-06-18
+  amount: 300
+  description: Ремонт вікна
+  category: eight
+o088:
+  odate: 2023-06-28
+  amount: 200
+  description: Матеріали
+  category: eight
+o089:
+  odate: 2023-06-29
+  amount: 300
+  description: Ремонт в кімнаті
+  category: eight
+o090:
+  odate: 2023-07-01
+  amount: 150
+  description: Матеріали
+  category: eight
+o091:
+  odate: 2023-01-09
+  amount: 500
+  description: Заправка
+  category: nine
+o092:
+  odate: 2023-01-19
+  amount: 100
+  description: Мийка
+  category: nine
+o093:
+  odate: 2023-02-09
+  amount: 500
+  description: Заправка
+  category: nine
+o094:
+  odate: 2023-02-19
+  amount: 100
+  description: Мийка
+  category: nine
+o095:
+  odate: 2023-03-09
+  amount: 500
+  description: Заправка
+  category: nine
+o096:
+  odate: 2023-03-19
+  amount: 100
+  description: Мийка
+  category: nine
+o097:
+  odate: 2023-05-09
+  amount: 500
+  description: Заправка
+  category: nine
+o098:
+  odate: 2023-05-19
+  amount: 100
+  description: Мийка
+  category: nine
+o099:
+  odate: 2023-06-09
+  amount: 500
+  description: Заправка
+  category: nine
+o100:
+  odate: 2023-06-19
+  amount: 100
+  description: Мийка
+  category: nine
+o101:
+  odate: 2023-01-10
+  amount: 70
+  description: Таксі
+  category: ten
+o102:
+  odate: 2023-01-20
+  amount: 80
+  description: Таксі
+  category: ten
+o103:
+  odate: 2023-02-10
+  amount: 70
+  description: Таксі
+  category: ten
+o104:
+  odate: 2023-02-20
+  amount: 80
+  description: Таксі
+  category: ten
+o105:
+  odate: 2023-03-10
+  amount: 70
+  description: Таксі
+  category: ten
+o106:
+  odate: 2023-03-20
+  amount: 80
+  description: Таксі
+  category: ten
+o107:
+  odate: 2023-04-10
+  amount: 70
+  description: Таксі
+  category: ten
+o108:
+  odate: 2023-04-20
+  amount: 80
+  description: Таксі
+  category: ten
+o109:
+  odate: 2023-06-10
+  amount: 70
+  description: Таксі
+  category: ten
+o110:
+  odate: 2023-06-20
+  amount: 80
+  description: Таксі
+  category: ten
