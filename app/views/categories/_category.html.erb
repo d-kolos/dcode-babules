@@ -3,7 +3,10 @@
   <tr id="<%= dom_id category %>">
     <td><%= category.name %></td>
     <td><%= category.description %></td>
-    <td><%= link_to "Show this category", category, class: 'btn btn-sm btn-outline-primary' %></td>
+    <td>
+      <%= link_to "Show this category", category, class: 'btn btn-sm btn-outline-success' %>
+      <%= link_to "Edit this operation", edit_category_path(category), class: 'btn btn-sm btn-outline-primary ms-2' %>
+    </td>
   </tr>
 
 <% else %>

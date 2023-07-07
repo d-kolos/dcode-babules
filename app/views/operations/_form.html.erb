@@ -40,7 +40,8 @@
   <div class="row mb-3">
     <%= form.label :category_id, class: "col-sm-12 col-form-label" %>
     <div class="col-sm-3">
-      <%= select(:operation, :category_id, options_for_select(@categories), {}, {class: 'form-select'} ) %>
+      <%#= select(:operation, :category_id, options_for_select(@categories), {}, {class: 'form-select'} # - wrong ) %>
+      <%= form.select :category_id, @categories, {}, class: 'form-select'  %>
     </div>
   </div>
 

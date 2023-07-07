@@ -5,7 +5,10 @@
     <td><%= sprintf('%.2f', operation.amount) %></td>
     <td><%= operation.description %></td>
     <td><%= operation.category.name %></td>
-    <td><%= link_to 'Show this operation', operation, class: 'btn btn-sm btn-outline-primary' %></td>
+    <td>
+      <%= link_to 'Show this operation', operation, class: 'btn btn-sm btn-outline-success' %>
+      <%= link_to "Edit this operation", edit_operation_path(operation), class: 'btn btn-sm btn-outline-primary ms-2' %>
+    </td>
   </tr>
 
 <% else %>
